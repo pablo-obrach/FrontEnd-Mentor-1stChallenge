@@ -41,6 +41,7 @@ body .modal__container .menu__content .menu__content__link {
   padding-left: 2rem;
   margin-bottom: 2rem;
   text-decoration: none;
+  color: #000;
 }
 
 @media screen and (min-width: 1440px) {
