@@ -254,7 +254,11 @@ body .modal__container .menu__content .menu__content__link {
     padding-right: 2rem;
   }
 }
-.main .related__content__container .related__content .related__content__img > img {
+.main
+  .related__content__container
+  .related__content
+  .related__content__img
+  > img {
   width: 100px;
   height: 130px;
 }
@@ -263,21 +267,37 @@ body .modal__container .menu__content .menu__content__link {
   flex-direction: column;
   gap: 0.5rem;
 }
-.main .related__content__container .related__content .related__content__texts .text__number {
+.main
+  .related__content__container
+  .related__content
+  .related__content__texts
+  .text__number {
   font-size: 2em;
   font-weight: 700;
   color: hsl(233, 8%, 79%);
 }
-.main .related__content__container .related__content .related__content__texts .related__content__subtitle {
+.main
+  .related__content__container
+  .related__content
+  .related__content__texts
+  .related__content__subtitle {
   font-size: 1em;
 }
 @media screen and (min-width: 1440px) {
-  .main .related__content__container .related__content .related__content__texts .related__content__subtitle:hover {
+  .main
+    .related__content__container
+    .related__content
+    .related__content__texts
+    .related__content__subtitle:hover {
     color: hsl(5, 85%, 63%);
     cursor: pointer;
   }
 }
-.main .related__content__container .related__content .related__content__texts .related__content__paragraph {
+.main
+  .related__content__container
+  .related__content
+  .related__content__texts
+  .related__content__paragraph {
   font-size: 15px;
   line-height: 2;
 }
