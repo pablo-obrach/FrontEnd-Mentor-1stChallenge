@@ -18,6 +18,7 @@ body {
       display: flex;
       justify-content: end;
       animation: 600ms linear modal-animation-enable;
+      overflow-y: hidden;
     }
     //*Animation for the modal-container
     @keyframes modal-animation-enable {

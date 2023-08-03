@@ -15,6 +15,7 @@ body .modal__container.enable {
   display: flex;
   justify-content: end;
   animation: 600ms linear modal-animation-enable;
+  overflow-y: hidden;
 }
 @keyframes modal-animation-enable {
   from {
