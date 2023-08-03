@@ -1,0 +1,49 @@
+@use "variables";
+@import "media-queries";
+.hero {
+  @include desktop {
+    margin-bottom: 1rem;
+  }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: variables.$container-padding;
+    }
+
+    .header__logo > img {
+      width: 70%;
+      @include desktop {
+        width: 100%;
+      }
+    }
+
+    .header__menu__icon {
+      @include desktop {
+        display: none;
+      }
+    }
+
+    .header__nav__ul {
+      display: none;
+      @include desktop {
+        display: flex;
+        list-style: none;
+        gap: 1.7rem;
+
+        .header__nav__links {
+          text-decoration: none;
+          &:hover {
+            color: variables.$soft-orange;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@use "variables";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: variables.$inter;
+
+  .modal__container {
+    &.enable {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: end;
+      animation: 600ms linear modal-animation-enable;
+    }
+    //*Animation for the modal-container
+    @keyframes modal-animation-enable {
+      from {
+        width: 0%;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    .menu__content {
+      width: 70%;
+      background: variables.$off-white;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+
+      .menu__content__cross-icon {
+        align-self: flex-end;
+        padding: 1rem;
+        margin-bottom: 4rem;
+        width: 60px;
+      }
+
+      .menu__content__link {
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+        text-decoration: none;
+      }
+    }
+  }
+}

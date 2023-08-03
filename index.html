@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | News homepage</title>
+</head>
+
+<body>
+
+  <!--*HEADER NAV-->
+  <header class="hero">
+    <nav class="header__nav container">
+      <picture class="header__logo">
+        <img src="./assets/images/logo.svg" alt="Company Logo">
+      </picture>
+      <picture id="menuIcon" class="header__menu__icon">
+        <img src="./assets/images/icon-menu.svg" alt="">
+      </picture>
+      <ul class="header__nav__ul">
+        <a class="header__nav__links" href="#">
+          <li class="header__nav__link">Home</li>
+        </a>
+        <a class="header__nav__links" href="#">
+          <li class="header__nav__link">New</li>
+        </a>
+        <a class="header__nav__links" href="#">
+          <li class="header__nav__link">Popular</li>
+        </a>
+        <a class="header__nav__links" href="#">
+          <li class="header__nav__link">Trending</li>
+        </a>
+        <a class="header__nav__links" href="#">
+          <li class="header__nav__link">Categories</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <!--*MAIN CONTENT-->
+  <main class="main container">
+    <section class="hero__container">
+      <picture class="hero__image">
+        <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 1440px)">
+        <img src="./assets/images/image-web-3-mobile.jpg" alt="Image Gaming">
+      </picture>
+      <div class="hero__texts">
+        <h1 class="hero__title">The Bright Future of Web 3.0?</h1>
+        <p class="hero__paragraph">We dive into the next evolution of the web that claims to put the power of the
+          platforms back into the hands of the
+          people.
+          But is it really fulfilling its promise?</p>
+        <a class="cta__button">Read More</a>
+      </div>
+    </section>
+
+    <!--*NEWS CONTENT-->
+    <section class="hero__news container">
+      <div class="hero__news__title">
+        <h2>New</h2>
+      </div>
+
+      <div class="hero__news__texts hero__news__text-borderBottom">
+        <h3 class="news__subtitle">Hydrogen VS Electric Cars</h3>
+        <p class="news__paragraph news__paragraph-MarginBottom">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+
+      <div class="hero__news__texts hero__news__text-borderBottom">
+        <h3 class="news__subtitle">The Downsides of AI Artistry</h3>
+        <p class="news__paragraph news__paragraph-MarginBottom">What are the possible adverse effects of on-demand AI
+          image generation?</p>
+      </div>
+
+      <div class="hero__news__texts">
+        <h3 class="news__subtitle">Is VC Funding Drying Up?</h3>
+        <p class="news__paragraph-noMargin"> Private funding by VC firms is down 50% YOY. We take a look at what that
+          means.</p>
+      </div>
+    </section>
+
+    <!--*RELATED CONTENT-->
+    <section class="related__content__container">
+      <div class="related__content">
+        <picture class="related__content__img">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="Retro Computer">
+        </picture>
+        <div class="related__content__texts">
+          <p class="text__number">01</p>
+          <h3 class="related__content__subtitle">Reviving Retro PCs</h3>
+          <p class="related__content__paragraph">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="related__content">
+        <picture class="related__content__img">
+          <img src="./assets/images/image-top-laptops.jpg" alt="Retro Computer">
+        </picture>
+        <div class="related__content__texts">
+          <p class="text__number">02</p>
+          <h3 class="related__content__subtitle">Top 10 Laptops of 2022</h3>
+          <p class="related__content__paragraph">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="related__content">
+        <picture class="related__content__img">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="Retro Computer">
+        </picture>
+        <div class="related__content__texts">
+          <p class="text__number">03</p>
+          <h3 class="related__content__subtitle">The Growth of Gaming</h3>
+          <p class="related__content__paragraph">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--*MODAL-MENU-HAMBURGUER-->
+  <div id="menuModal" class="modal__container">
+
+  </div>
+  <script src="./JS/index.js"></script>
+</body>
+
+</html>
